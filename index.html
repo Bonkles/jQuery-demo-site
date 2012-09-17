@@ -11,13 +11,9 @@
 				// Tabs
 				$('#tabs').tabs();
 				
-				//Accordion
-				$("#search-bar").accordion({
-				active: 0, 
-				});
-
 			});
 		</script>
+		
 		
 		<style type="text/css">
 		li.ui-state-default {
@@ -33,15 +29,24 @@
 		</style>
 	</head>
 	<body>
-	<h1>Welcome to your internal web page thing!</h1>
 
-<div id="search-bar-area" style="width: 20%;   ">
+<div id="top-bar-area" class="ui-helper-clearfix ui-helper-reset ui-widget ui-widget-header" style="width: 100%; height: 75px;">
+<div style="vertical-align: text-bottom; float: right;"><br/>Login Placeholder</div>
+</div>
+
+<div id="search-bar-area" class="ui-widget ui-state-default" style="width: 20%;">
 	<div id="search-bar">
-		<h1><a>File name</a></h1>
-		<div>filename search contents</div>
-		<h1><a>Attributes</a></h1>
+		<div id="search-bar-title">Search</div>
+		<h3><a href="#">Search by filename:</a></h3>
+		<div>
+				<div>
+					<h4>Filename:</h4>
+					<input id="search-text-field" style="z-index: 100; position: relative" title="begin typing any filename." />
+				</div>
+		</div>
+		<h3><a href="#">Attributes</a></h3>
 		<div>Attributes search contents</div>
-		<h1><a>OEM</a></h1>
+		<h3><a href="#">OEM</a></h3>
 		<div>OEM search contents</div>
 	</div>
 	
@@ -71,7 +76,7 @@
 	</div>
 -->
 
-
+		<script type="text/javascript" src="expandable-search-panel.js"></script>
 
 	</body>
 </html>
