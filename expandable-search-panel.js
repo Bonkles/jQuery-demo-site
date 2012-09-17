@@ -21,3 +21,26 @@ $("#search-bar").addClass("ui-accordion ui-accordion-icons ui-widget ui-helper-r
       .addClass("ui-accordion-content  ui-helper-reset ui-widget-content ui-corner-bottom")
       .hide();
 
+
+//This statement provides the autocomplete search field with some example items
+//in the fill bar.
+$(function() {
+		var availableTags = [
+			"Applesauce",
+			"Brownies",
+			"Cherries",
+			"Dough",
+			"Eclairs",
+			"Figs",
+			"Gravy",
+			"Ham",
+			"Jell-O",
+			"Jam",
+			"Lemons",
+			"Cake"
+		];
+		$( "#search-text-field" ).autocomplete({
+			source: availableTags
+		});
+	});
+//
